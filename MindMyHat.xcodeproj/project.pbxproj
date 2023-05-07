@@ -14,6 +14,7 @@
 		33E815132A07F52A0038DAFA /* MindMyHatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815122A07F52A0038DAFA /* MindMyHatTests.swift */; };
 		33E8151D2A07F52A0038DAFA /* MindMyHatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8151C2A07F52A0038DAFA /* MindMyHatUITests.swift */; };
 		33E8151F2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8151E2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift */; };
+		33E8152C2A07F5450038DAFA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33E8152B2A07F5450038DAFA /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		33E815182A07F52A0038DAFA /* MindMyHatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindMyHatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E8151C2A07F52A0038DAFA /* MindMyHatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMyHatUITests.swift; sourceTree = "<group>"; };
 		33E8151E2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMyHatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33E8152B2A07F5450038DAFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		33E815002A07F5280038DAFA /* MindMyHat */ = {
 			isa = PBXGroup;
 			children = (
+				33E8152B2A07F5450038DAFA /* README.md */,
 				33E815012A07F5280038DAFA /* MindMyHatApp.swift */,
 				33E815032A07F5280038DAFA /* ContentView.swift */,
 				33E815052A07F5290038DAFA /* Assets.xcassets */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E8152C2A07F5450038DAFA /* README.md in Resources */,
 				33E815092A07F5290038DAFA /* Preview Assets.xcassets in Resources */,
 				33E815062A07F5290038DAFA /* Assets.xcassets in Resources */,
 			);
