@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		334D4BD42A0908D7004C7076 /* HatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD32A0908D7004C7076 /* HatListViewModel.swift */; };
 		334D4BD62A090D4E004C7076 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD52A090D4E004C7076 /* Alerts.swift */; };
+		334D4BD82A093A20004C7076 /* HatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD72A093A20004C7076 /* HatDetailView.swift */; };
+		334D4BDA2A093B2B004C7076 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD92A093B2B004C7076 /* XDismissButton.swift */; };
+		334D4BDC2A094186004C7076 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BDB2A094186004C7076 /* CustomModifiers.swift */; };
+		334D4BDE2A0941C2004C7076 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BDD2A0941C2004C7076 /* Color+Ext.swift */; };
+		334D4BE02A0942C6004C7076 /* HatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BDF2A0942C6004C7076 /* HatImage.swift */; };
 		33E815022A07F5280038DAFA /* MindMyHatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815012A07F5280038DAFA /* MindMyHatApp.swift */; };
 		33E815042A07F5280038DAFA /* MindMyHatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815032A07F5280038DAFA /* MindMyHatView.swift */; };
 		33E815062A07F5290038DAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E815052A07F5290038DAFA /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 /* Begin PBXFileReference section */
 		334D4BD32A0908D7004C7076 /* HatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatListViewModel.swift; sourceTree = "<group>"; };
 		334D4BD52A090D4E004C7076 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		334D4BD72A093A20004C7076 /* HatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatDetailView.swift; sourceTree = "<group>"; };
+		334D4BD92A093B2B004C7076 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		334D4BDB2A094186004C7076 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		334D4BDD2A0941C2004C7076 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		334D4BDF2A0942C6004C7076 /* HatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatImage.swift; sourceTree = "<group>"; };
 		33E814FE2A07F5280038DAFA /* MindMyHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMyHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E815012A07F5280038DAFA /* MindMyHatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMyHatApp.swift; sourceTree = "<group>"; };
 		33E815032A07F5280038DAFA /* MindMyHatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMyHatView.swift; sourceTree = "<group>"; };
@@ -127,6 +137,10 @@
 				33E815472A08FA3E0038DAFA /* Utilities */,
 				33E815452A08F86B0038DAFA /* Screens */,
 				33E815492A0900010038DAFA /* HatListViewCell.swift */,
+				334D4BD92A093B2B004C7076 /* XDismissButton.swift */,
+				334D4BDB2A094186004C7076 /* CustomModifiers.swift */,
+				334D4BDD2A0941C2004C7076 /* Color+Ext.swift */,
+				334D4BDF2A0942C6004C7076 /* HatImage.swift */,
 			);
 			path = MindMyHat;
 			sourceTree = "<group>";
@@ -182,6 +196,7 @@
 				33E815032A07F5280038DAFA /* MindMyHatView.swift */,
 				33E815412A08F8300038DAFA /* OrderView.swift */,
 				334D4BD32A0908D7004C7076 /* HatListViewModel.swift */,
+				334D4BD72A093A20004C7076 /* HatDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -337,18 +352,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334D4BD82A093A20004C7076 /* HatDetailView.swift in Sources */,
 				33E815042A07F5280038DAFA /* MindMyHatView.swift in Sources */,
 				33E8152F2A08DD220038DAFA /* Hats.swift in Sources */,
 				33E815362A08E3200038DAFA /* NetworkManager.swift in Sources */,
 				33E815422A08F8300038DAFA /* OrderView.swift in Sources */,
+				334D4BDE2A0941C2004C7076 /* Color+Ext.swift in Sources */,
 				33E8154A2A0900010038DAFA /* HatListViewCell.swift in Sources */,
+				334D4BDC2A094186004C7076 /* CustomModifiers.swift in Sources */,
 				33E815442A08F84F0038DAFA /* AccountView.swift in Sources */,
 				33E8153A2A08E3CE0038DAFA /* HatError.swift in Sources */,
 				33E815402A08F8220038DAFA /* HatsListView.swift in Sources */,
 				33E815022A07F5280038DAFA /* MindMyHatApp.swift in Sources */,
 				334D4BD42A0908D7004C7076 /* HatListViewModel.swift in Sources */,
+				334D4BE02A0942C6004C7076 /* HatImage.swift in Sources */,
 				334D4BD62A090D4E004C7076 /* Alerts.swift in Sources */,
 				33E815382A08E3840038DAFA /* Constants.swift in Sources */,
+				334D4BDA2A093B2B004C7076 /* XDismissButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

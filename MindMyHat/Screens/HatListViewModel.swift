@@ -7,10 +7,13 @@
 
 import SwiftUI
 
+@MainActor
 final class HatListViewModel: ObservableObject {
 
   @Published var hats: [Hat] = []
   @Published var alertItem: AlertItem?
+  @Published var isShowingDetail = false
+  @Published var selectedHat: Hat?
 
   func getHats() {
 

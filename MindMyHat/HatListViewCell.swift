@@ -13,7 +13,10 @@ struct HatListViewCell: View {
   var body: some View {
 
     HStack {
-      hatImage(hatImage: "\(MindMyHat.imageURL)\(hat.image).jpg")
+      HatImage(hatImage: "\(MindMyHat.imageURL)\(hat.image).jpg")
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 65, height: 65)
+        .cornerRadius(8)
 
       VStack(alignment: .leading, spacing: 3) {
         Text(hat.title)
@@ -26,28 +29,10 @@ struct HatListViewCell: View {
       }
     }
   }
-
-  func hatImage(hatImage: String) -> some View {
-
-    return AsyncImage(url: URL(string: hatImage)) { image in
-        image
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 65, height: 65)
-            .cornerRadius(8)
-    } placeholder: {
-        Image(
-          MindMyHat.defaultHatImage)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 65, height: 65)
-            .cornerRadius(8)
-    }
-  }
 }
 
 struct HatListViewCell_Previews: PreviewProvider {
   static var previews: some View {
-    HatListViewCell(hat: MockData.mockHat0)
+    HatListViewCell(hat: MockData.mockHat3)
   }
 }

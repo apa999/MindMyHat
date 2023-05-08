@@ -13,17 +13,30 @@ struct HatsListView: View {
   @StateObject var viewModel = HatListViewModel()
 
   var body: some View {
-    NavigationView {
-      List(viewModel.hats) {hat in
-        HatListViewCell(hat: hat)
+
+    ZStack {
+      NavigationView {
+        List(viewModel.hats) {hat in
+          HatListViewCell(hat: hat)
+
+            .onTapGesture {
+              viewModel.selectedHat = hat
+              viewModel.isShowingDetail = true
+            }
+        }
+        .navigationTitle("🎩 Hats")
       }
-      .navigationTitle("🎩 Hats")
-    }
 
-    .onAppear {
-      viewModel.getHats()
-    }
+      .task {
+        viewModel.getHats()
+      }
+      .blur(radius: viewModel.isShowingDetail ? 20 : 0)
 
+      if viewModel.isShowingDetail {
+          HatDetailView(hat: viewModel.selectedHat!,
+                              isShowingDetail: $viewModel.isShowingDetail)
+      }
+    }
     .alert(item: $viewModel.alertItem) { alertItem in
       Alert(title: alertItem.title,
             message: alertItem.message,
