@@ -1,28 +1,30 @@
-//
-//  NetworkManager.swift
-//  MindMyHat
-//
-//  Created by Anthony Abbott on 08/05/2023.
-//
+  //
+  //  NetworkManager.swift
+  //  MindMyHat
+  //
+  //  Created by Anthony Abbott on 08/05/2023.
+  //
 
-import UIKit
+import SwiftUI
 
 final class NetworkManager {
 
   static let shared = NetworkManager()
 
-  private let cache         = NSCache<NSString, UIImage>()
+  private let cache = NSCache<NSString, UIImage>()
 
   private init() {}
 
   func getHats() async throws  -> [Hat] {
     guard let url = URL(string: MindMyHat.baseURL) else { throw HatError.invalidURL }
 
-    let (data, response) = try await URLSession.shared.data(from: url)
+    let (data, _) = try await URLSession.shared.data(from: url)
 
     do {
       let decoder = JSONDecoder()
-      
+
+      let str = String(decoding: data, as: UTF8.self)
+      print(str)
       return try decoder.decode(Hats.self, from: data).hats
     } catch {
       throw HatError.invalidData

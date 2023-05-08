@@ -11,7 +11,7 @@ import SwiftUI
 struct MindMyHatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MindMyHatView()
         }
     }
 }
