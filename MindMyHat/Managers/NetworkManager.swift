@@ -23,8 +23,6 @@ final class NetworkManager {
     do {
       let decoder = JSONDecoder()
 
-      let str = String(decoding: data, as: UTF8.self)
-      print(str)
       return try decoder.decode(Hats.self, from: data).hats
     } catch {
       throw HatError.invalidData
