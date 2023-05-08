@@ -15,6 +15,13 @@
 		33E8151D2A07F52A0038DAFA /* MindMyHatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8151C2A07F52A0038DAFA /* MindMyHatUITests.swift */; };
 		33E8151F2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8151E2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift */; };
 		33E8152C2A07F5450038DAFA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33E8152B2A07F5450038DAFA /* README.md */; };
+		33E8152F2A08DD220038DAFA /* Hats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8152E2A08DD220038DAFA /* Hats.swift */; };
+		33E815312A08DD6A0038DAFA /* HatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815302A08DD6A0038DAFA /* HatTests.swift */; };
+		33E815342A08E3010038DAFA /* HatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815332A08E3010038DAFA /* HatManager.swift */; };
+		33E815362A08E3200038DAFA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815352A08E3200038DAFA /* NetworkManager.swift */; };
+		33E815382A08E3840038DAFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815372A08E3840038DAFA /* Constants.swift */; };
+		33E8153A2A08E3CE0038DAFA /* HatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815392A08E3CE0038DAFA /* HatError.swift */; };
+		33E8153E2A08EC0B0038DAFA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8153D2A08EC0B0038DAFA /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,13 @@
 		33E8151C2A07F52A0038DAFA /* MindMyHatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMyHatUITests.swift; sourceTree = "<group>"; };
 		33E8151E2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindMyHatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33E8152B2A07F5450038DAFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		33E8152E2A08DD220038DAFA /* Hats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hats.swift; sourceTree = "<group>"; };
+		33E815302A08DD6A0038DAFA /* HatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatTests.swift; sourceTree = "<group>"; };
+		33E815332A08E3010038DAFA /* HatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatManager.swift; sourceTree = "<group>"; };
+		33E815352A08E3200038DAFA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		33E815372A08E3840038DAFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		33E815392A08E3CE0038DAFA /* HatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatError.swift; sourceTree = "<group>"; };
+		33E8153D2A08EC0B0038DAFA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +110,15 @@
 		33E815002A07F5280038DAFA /* MindMyHat */ = {
 			isa = PBXGroup;
 			children = (
+				33E815322A08E2E60038DAFA /* Managers */,
+				33E8152D2A08DCE50038DAFA /* Model */,
 				33E8152B2A07F5450038DAFA /* README.md */,
 				33E815012A07F5280038DAFA /* MindMyHatApp.swift */,
 				33E815032A07F5280038DAFA /* ContentView.swift */,
 				33E815052A07F5290038DAFA /* Assets.xcassets */,
 				33E815072A07F5290038DAFA /* Preview Content */,
+				33E815372A08E3840038DAFA /* Constants.swift */,
+				33E815392A08E3CE0038DAFA /* HatError.swift */,
 			);
 			path = MindMyHat;
 			sourceTree = "<group>";
@@ -117,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				33E815122A07F52A0038DAFA /* MindMyHatTests.swift */,
+				33E815302A08DD6A0038DAFA /* HatTests.swift */,
+				33E8153D2A08EC0B0038DAFA /* MockData.swift */,
 			);
 			path = MindMyHatTests;
 			sourceTree = "<group>";
@@ -128,6 +148,23 @@
 				33E8151E2A07F52A0038DAFA /* MindMyHatUITestsLaunchTests.swift */,
 			);
 			path = MindMyHatUITests;
+			sourceTree = "<group>";
+		};
+		33E8152D2A08DCE50038DAFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33E8152E2A08DD220038DAFA /* Hats.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		33E815322A08E2E60038DAFA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				33E815332A08E3010038DAFA /* HatManager.swift */,
+				33E815352A08E3200038DAFA /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E815042A07F5280038DAFA /* ContentView.swift in Sources */,
+				33E8152F2A08DD220038DAFA /* Hats.swift in Sources */,
+				33E815362A08E3200038DAFA /* NetworkManager.swift in Sources */,
+				33E8153A2A08E3CE0038DAFA /* HatError.swift in Sources */,
 				33E815022A07F5280038DAFA /* MindMyHatApp.swift in Sources */,
+				33E815342A08E3010038DAFA /* HatManager.swift in Sources */,
+				33E815382A08E3840038DAFA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E815132A07F52A0038DAFA /* MindMyHatTests.swift in Sources */,
+				33E8153E2A08EC0B0038DAFA /* MockData.swift in Sources */,
+				33E815312A08DD6A0038DAFA /* HatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MindMyHat/Preview Content\"";
-				DEVELOPMENT_TEAM = 2F4C5Q99XV;
+				DEVELOPMENT_TEAM = JV455MTU52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MindMyHat/Preview Content\"";
-				DEVELOPMENT_TEAM = 2F4C5Q99XV;
+				DEVELOPMENT_TEAM = JV455MTU52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -517,7 +561,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F4C5Q99XV;
+				DEVELOPMENT_TEAM = JV455MTU52;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apabbott.MindMyHatUITests;
@@ -535,7 +579,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2F4C5Q99XV;
+				DEVELOPMENT_TEAM = JV455MTU52;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apabbott.MindMyHatUITests;

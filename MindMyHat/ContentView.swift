@@ -16,6 +16,18 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear{
+          Task {
+            do {
+              let hats = try await NetworkManager.shared.getHats()
+              print(hats.count)
+            } catch {
+              print(error)
+            }
+
+          }
+
+        }
     }
 }
 
