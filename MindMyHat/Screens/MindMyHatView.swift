@@ -8,25 +8,19 @@
 import SwiftUI
 
 struct MindMyHatView: View {
+
+  @EnvironmentObject var order: Order
+
   var body: some View {
     TabView{
       HatsListView()
-        .tabItem{
-          Image(systemName: "graduationcap")
-          Text("Hats")
-        }
+        .tabItem {Label("Hats", systemImage: "graduationcap")}
 
-      AccountView()
-        .tabItem{
-          Image(systemName: "person")
-          Text("Account")
-        }
+      CustomerView()
+        .tabItem {Label("Customer", systemImage: "graduationcap") }
 
       OrderView()
-        .tabItem{
-          Image(systemName: "bag")
-          Text("Shopping bag")
-        }
+        .tabItem{Label("Shopping bag", systemImage: "graduationcap") }
     }
     .tint(Color(MindMyHat.defaultColour))
   }

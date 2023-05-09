@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333A57342A0A20F1002F3BD7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A57332A0A20F1002F3BD7 /* Order.swift */; };
+		333A57362A0A232D002F3BD7 /* NoHats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A57352A0A232D002F3BD7 /* NoHats.swift */; };
+		333A57382A0A2749002F3BD7 /* CustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A57372A0A2749002F3BD7 /* CustomerViewModel.swift */; };
+		333A573A2A0A2780002F3BD7 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A57392A0A2780002F3BD7 /* Customer.swift */; };
+		333A573D2A0A293B002F3BD7 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A573C2A0A293B002F3BD7 /* String+Ext.swift */; };
+		333A573F2A0A29CC002F3BD7 /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A573E2A0A29CC002F3BD7 /* CustomerView.swift */; };
 		334D4BD42A0908D7004C7076 /* HatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD32A0908D7004C7076 /* HatListViewModel.swift */; };
 		334D4BD62A090D4E004C7076 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD52A090D4E004C7076 /* Alerts.swift */; };
 		334D4BD82A093A20004C7076 /* HatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334D4BD72A093A20004C7076 /* HatDetailView.swift */; };
@@ -30,7 +36,6 @@
 		33E8153E2A08EC0B0038DAFA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8153D2A08EC0B0038DAFA /* MockData.swift */; };
 		33E815402A08F8220038DAFA /* HatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E8153F2A08F8220038DAFA /* HatsListView.swift */; };
 		33E815422A08F8300038DAFA /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815412A08F8300038DAFA /* OrderView.swift */; };
-		33E815442A08F84F0038DAFA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815432A08F84F0038DAFA /* AccountView.swift */; };
 		33E8154A2A0900010038DAFA /* HatListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E815492A0900010038DAFA /* HatListViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		333A57332A0A20F1002F3BD7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		333A57352A0A232D002F3BD7 /* NoHats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHats.swift; sourceTree = "<group>"; };
+		333A57372A0A2749002F3BD7 /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
+		333A57392A0A2780002F3BD7 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		333A573C2A0A293B002F3BD7 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		333A573E2A0A29CC002F3BD7 /* CustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
 		334D4BD32A0908D7004C7076 /* HatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatListViewModel.swift; sourceTree = "<group>"; };
 		334D4BD52A090D4E004C7076 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		334D4BD72A093A20004C7076 /* HatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatDetailView.swift; sourceTree = "<group>"; };
@@ -78,7 +89,6 @@
 		33E8153D2A08EC0B0038DAFA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		33E8153F2A08F8220038DAFA /* HatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatsListView.swift; sourceTree = "<group>"; };
 		33E815412A08F8300038DAFA /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
-		33E815432A08F84F0038DAFA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		33E815492A0900010038DAFA /* HatListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333A573B2A0A2929002F3BD7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				333A573C2A0A293B002F3BD7 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		33E814F52A07F5270038DAFA = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +148,7 @@
 		33E815002A07F5280038DAFA /* MindMyHat */ = {
 			isa = PBXGroup;
 			children = (
+				333A573B2A0A2929002F3BD7 /* Extensions */,
 				33E815322A08E2E60038DAFA /* Managers */,
 				33E8152D2A08DCE50038DAFA /* Model */,
 				33E815462A08F9A40038DAFA /* System */,
@@ -176,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				33E8152E2A08DD220038DAFA /* Hats.swift */,
+				333A57332A0A20F1002F3BD7 /* Order.swift */,
+				333A57392A0A2780002F3BD7 /* Customer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,12 +212,14 @@
 		33E815452A08F86B0038DAFA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				33E815432A08F84F0038DAFA /* AccountView.swift */,
 				33E8153F2A08F8220038DAFA /* HatsListView.swift */,
 				33E815032A07F5280038DAFA /* MindMyHatView.swift */,
 				33E815412A08F8300038DAFA /* OrderView.swift */,
 				334D4BD32A0908D7004C7076 /* HatListViewModel.swift */,
 				334D4BD72A093A20004C7076 /* HatDetailView.swift */,
+				333A57352A0A232D002F3BD7 /* NoHats.swift */,
+				333A57372A0A2749002F3BD7 /* CustomerViewModel.swift */,
+				333A573E2A0A29CC002F3BD7 /* CustomerView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -358,17 +381,22 @@
 				33E815362A08E3200038DAFA /* NetworkManager.swift in Sources */,
 				33E815422A08F8300038DAFA /* OrderView.swift in Sources */,
 				334D4BDE2A0941C2004C7076 /* Color+Ext.swift in Sources */,
+				333A57382A0A2749002F3BD7 /* CustomerViewModel.swift in Sources */,
 				33E8154A2A0900010038DAFA /* HatListViewCell.swift in Sources */,
 				334D4BDC2A094186004C7076 /* CustomModifiers.swift in Sources */,
-				33E815442A08F84F0038DAFA /* AccountView.swift in Sources */,
+				333A573D2A0A293B002F3BD7 /* String+Ext.swift in Sources */,
 				33E8153A2A08E3CE0038DAFA /* HatError.swift in Sources */,
 				33E815402A08F8220038DAFA /* HatsListView.swift in Sources */,
 				33E815022A07F5280038DAFA /* MindMyHatApp.swift in Sources */,
+				333A57342A0A20F1002F3BD7 /* Order.swift in Sources */,
 				334D4BD42A0908D7004C7076 /* HatListViewModel.swift in Sources */,
+				333A573A2A0A2780002F3BD7 /* Customer.swift in Sources */,
 				334D4BE02A0942C6004C7076 /* HatImage.swift in Sources */,
 				334D4BD62A090D4E004C7076 /* Alerts.swift in Sources */,
 				33E815382A08E3840038DAFA /* Constants.swift in Sources */,
 				334D4BDA2A093B2B004C7076 /* XDismissButton.swift in Sources */,
+				333A57362A0A232D002F3BD7 /* NoHats.swift in Sources */,
+				333A573F2A0A29CC002F3BD7 /* CustomerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

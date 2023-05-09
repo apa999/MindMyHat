@@ -11,6 +11,7 @@ struct HatDetailView: View {
 
   let hat: Hat
 
+  @EnvironmentObject var order: Order
   @Binding var isShowingDetail: Bool
 
   var body: some View {
@@ -33,17 +34,17 @@ struct HatDetailView: View {
       Spacer()
 
       Button {
-//        order.add(appetizer)
+        order.add(hat)
         isShowingDetail = false
       } label: {
 
-        Text("\(hat.price.formatted(.currency(code: "GBP")))")
+        Text("\(hat.price.formatted(.currency(code: "GBP"))) - Add to Order")
       }
       .modifier(StandardButtonStyle())
       .padding(.bottom, 30)
     }
-    .frame(width: 300, height: 525)
-//    .background(Color(.systemBackground))
+    .frame(width: 360, height: 650)
+    .background(Color(.systemBackground))
     .cornerRadius(12)
     .shadow(radius: 40)
     .overlay(Button {

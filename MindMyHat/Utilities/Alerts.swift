@@ -1,9 +1,9 @@
-//
-//  Alerts.swift
-//  MindMyHat
-//
-//  Created by Anthony Abbott on 08/05/2023.
-//
+  //
+  //  Alerts.swift
+  //  MindMyHat
+  //
+  //  Created by Anthony Abbott on 08/05/2023.
+  //
 
 import SwiftUI
 
@@ -16,6 +16,8 @@ struct AlertItem: Identifiable {
 
 
 struct AlertContext {
+
+    //MARK: - Data Alerts
   static let invalidData =
   AlertItem(title: Text("Server error"),
             message: Text("The data received from server was invalid."),
@@ -36,6 +38,7 @@ struct AlertContext {
             message: Text("Unable to compete request at this time."),
             dismissButton: .default(Text("Okay")))
 
+    //MARK: - Customer Form Alerts
   static let fNameIsMissing =
   AlertItem(title: Text("Accounts form error"),
             message: Text("You must enter a first name"),
@@ -45,7 +48,6 @@ struct AlertContext {
   AlertItem(title: Text("Accounts form error"),
             message: Text("You must enter a last name"),
             dismissButton: .default(Text("Okay")))
-
 
   static let emailIsMissing =
   AlertItem(title: Text("Accounts form error"),
@@ -77,5 +79,17 @@ struct AlertContext {
   AlertItem(title: Text("Hats error"),
             message: Text("Unable to get hats"),
             dismissButton: .default(Text("Okay")))
+
+  static let invalidForm      = AlertItem(title: Text("Invalid Form"),
+                                          message: Text("Please ensure all fields in the form have been filled out."),
+                                          dismissButton: .default(Text("OK")))
+
+  static let invalidEmail     = AlertItem(title: Text("Invalid Email"),
+                                          message: Text("Please ensure your email is correct."),
+                                          dismissButton: .default(Text("OK")))
+
+  static let invalidUserData  = AlertItem(title: Text("Profile Error"),
+                                          message: Text("There was an error saving or retrieving your profile."),
+                                          dismissButton: .default(Text("OK")))
 }
 
